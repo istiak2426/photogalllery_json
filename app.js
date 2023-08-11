@@ -9,6 +9,8 @@ app.use(cors());
 
 app.get('/photos', (req, res) => res.send(data.photos));
 app.get('/comments', (req, res) => res.send(data.comments));
+app.post('/comments', (req, res) => res.send(data.comments));
+
 
 app.listen(3000, () => {
     console.log("Server Started at 3000");
